@@ -3,13 +3,13 @@ codechallenge
 
 Você foi contratado para construir um webservice REST para o metro de Londres. Você recebeu os arquivos em [1] para alimentar o banco de dados desse serviço. 
 
-* Você deve criar uma estrutura para importar e armazenar os dados
+* Você deve criar uma estrutura para importar e armazenar os dados, a importação deve ser feita apenas uma vez. 
 
 Ao finalizar a primeira parte, as seguintes funcionalidades foram pedidas pelo time de **mobile** para que eles possam construir uma aplicação para auxiliar no deslocamento dos passageiros. 
 
-* Um método que liste um caminho (contendo todas as estações) qualquer entre a estação X e a estação Y 
-* Um método que liste o menor caminho (contendo todas as estações) ( considerando paradas ) entre a estação X e a estação Y
-* Um método que calcule o tempo aproximando da viagem no item 2, considerando que ao passar de uma estação adjacente a próxima o passageiro gaste 3 minutos e ao trocar de linha gaste 12 minutos. 
+1. Um método que liste um caminho (contendo todas as estações) qualquer entre a estação X e a estação Y 
+2. Um método que liste o menor caminho (contendo todas as estações) ( considerando paradas ) entre a estação X e a estação Y
+3. Um método que calcule o tempo aproximando da viagem no item 2, considerando que ao passar de uma estação adjacente a próxima o passageiro gaste 3 minutos e ao trocar de linha gaste 12 minutos. 
 
 Observações: 
 
