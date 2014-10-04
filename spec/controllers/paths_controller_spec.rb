@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe PathsController, :type => :controller do
 
-  describe "GET random" do
+  describe "GET first" do
     it "returns http success" do
       get :random
       expect(response).to have_http_status(:success)

@@ -1,5 +1,5 @@
 Codechallenge::Application.routes.draw do
-  get "paths/random"
+  get "paths/first"
 
   get "paths/shortest"
 
