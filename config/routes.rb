@@ -1,4 +1,10 @@
 Codechallenge::Application.routes.draw do
+  get "paths/random"
+
+  get "paths/shortest"
+
+  get "paths/approximate_time"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
