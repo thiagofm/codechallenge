@@ -44,7 +44,7 @@ class Station < Neo4j::Rails::Model
                .map {|item| item.props }
   end
 
-  # Exports all stations from csv
+  # Import all stations from csv
   def self.create_stations
     file = Rails.root.join('data', 'stations.csv')
     CSV.foreach(file, headers: :first_row) do |row|
@@ -59,7 +59,7 @@ class Station < Neo4j::Rails::Model
     end
   end
 
-  # Exports all routes from csv
+  # Import all routes from csv
   def self.create_routes
     file = Rails.root.join('data', 'lines.csv')
     CSV.foreach(file, headers: :first_row) do |row|

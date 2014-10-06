@@ -8,7 +8,7 @@ class Line < Neo4j::Rails::Model
 
   has_n(:stations)
 
-  # Exports all lines from CSV
+  # Import all lines from CSV
   def self.create_lines
     file = Rails.root.join('data', 'routes.csv')
     CSV.foreach(file, headers: :first_row) do |row|
