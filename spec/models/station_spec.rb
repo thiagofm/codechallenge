@@ -12,7 +12,7 @@ RSpec.describe Station do
     Line.create_lines
   end
 
-  context '.approximate_time', wip: true do
+  context '.approximate_time' do
     let(:station_11) { Station.find(number: 11) }
     let(:station_212) { station_290 = Station.find(number: 212) }
     let(:station_290) { station_290 = Station.find(number: 290) }
@@ -58,8 +58,5 @@ RSpec.describe Station do
     it 'correctly sets the route for a station' do
       expect(Station.find(number: 11).rels(:outgoing, :route).first.end_node.number).to be(163)
     end
-  end
-
-  context '#add_routes' do
   end
 end

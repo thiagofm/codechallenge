@@ -1,3 +1,5 @@
+require 'csv'
+
 class Line < Neo4j::Rails::Model
   property :number, :type => Fixnum, index: :exact
   property :name, :type => String
@@ -9,7 +11,6 @@ class Line < Neo4j::Rails::Model
   # Exports all lines from CSV
   def self.create_lines
     file = Rails.root.join('data', 'routes.csv')
-    require 'csv'
     CSV.foreach(file, headers: :first_row) do |row|
       create(number: row[0],
              name: row[1],

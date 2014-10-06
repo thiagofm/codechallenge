@@ -1,3 +1,5 @@
+require 'csv'
+
 class Station < Neo4j::Rails::Model
   property :number, :type => Fixnum, index: :exact
   property :latitude, :type => Float
@@ -45,7 +47,6 @@ class Station < Neo4j::Rails::Model
   # Exports all stations from csv
   def self.create_stations
     file = Rails.root.join('data', 'stations.csv')
-    require 'csv'
     CSV.foreach(file, headers: :first_row) do |row|
       create(number: row[0],
              latitude: row[1],
@@ -61,7 +62,6 @@ class Station < Neo4j::Rails::Model
   # Exports all routes from csv
   def self.create_routes
     file = Rails.root.join('data', 'lines.csv')
-    require 'csv'
     CSV.foreach(file, headers: :first_row) do |row|
       from = Station.find(number: row[0].to_i)
       to = Station.find(number: row[1].to_i)
