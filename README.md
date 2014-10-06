@@ -30,7 +30,7 @@ Retorna a rota das estações com o menor caminho.
 Parâmetros:
 station_1 e station_2: o número das respectivas estações
 
-### /paths/shortest
+### /paths/approximate_time
 
 Função:
 Retorna o tempo estimado da rota das estações com o menor caminho.
