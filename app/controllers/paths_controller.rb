@@ -1,7 +1,4 @@
 class PathsController < ApplicationController
-  def random
-  end
-
   def shortest
   end
 
